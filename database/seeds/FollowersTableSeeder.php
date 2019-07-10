@@ -2,9 +2,19 @@
 
 use Illuminate\Database\Seeder;
 use App\Models\User;
+<<<<<<< HEAD
 
 class FollowersTableSeeder extends Seeder
 {
+=======
+class FollowersTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+>>>>>>> following-users
     public function run()
     {
         $users = User::all();
@@ -23,4 +33,8 @@ class FollowersTableSeeder extends Seeder
             $follower->follow($user_id);
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> following-users
